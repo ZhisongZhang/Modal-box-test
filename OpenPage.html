@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script language="javascript">
+        function win(add, w, h) {
+
+            window.open(add, "", "width=" + w + ",height=" + h + ",location=0,directories=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1,top=5,left=5");
+            window.location.reload();
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+    <h1>Click to open link in new window</h1>
+    <ul>
+        <li><a href="#" class="Menu">Account Master</a>
+            <ul>
+                <li><a href="new.htm" value="new.htm" target="_blank" onclick="win(this.href,600,450)">New</a></li>
+                <li><a href="mod.html" value="mod.html" target="_blank" onclick="win(this.href,600,500)">Modify</a></li>
+                <li><a href="del.html" value="del.html" target="_blank" onclick="win(this.href,600,500)">Delete</a></li>
+                <li><a href="view.html" value="view.html" target="_blank" onclick="win(this.href,600,500)">View</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

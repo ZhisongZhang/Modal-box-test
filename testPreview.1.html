@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link href="./Image_preview_for_links.css" rel="stylesheet">
+  <script type="text/javascript">
+    $(function () {
+      $('#p1 a').miniPreview({ prefetch: 'pageload' });
+      $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+      $('#p3 a').miniPreview({ prefetch: 'none' });
+    });
+  </script>
+  <script src="./Image_preview.js"></script>
+
+</head>
+
+<body>
+  <ul>
+    <li>
+      <div id="p3">
+        This demo shows how to add live mini-previews to links on hover. Check out this link to
+        <a href="https://s3-ap-southeast-2.amazonaws.com/gnss-analysis/status/net/reg13/yearly_ALBU_neh.png" target="_blank">MOBS
+          COR monitoring</a>. Hover over it to see a small preview of what it points to.
+
+      </div>
+    </li>
+    <li>
+      <div id="p3">
+        This demo shows how to add live mini-previews to links on hover. Check out this link to
+        <a href="https://s3-ap-southeast-2.amazonaws.com/gnss-analysis/status/net/reg13/yearly_ANGS_neh.png" target="_blank">MOBS
+          COR monitoring</a>. Hover over it to see a small preview of what it points to.
+
+      </div>
+    </li>
+    <li>
+      <div id="p3">
+        This demo shows how to add live mini-previews to links on hover. Check out this link to
+        <a href="https://s3-ap-southeast-2.amazonaws.com/gnss-analysis/status/net/reg13/yearly_ANTW_neh.png" target="_blank">MOBS
+          COR monitoring</a>. Hover over it to see a small preview of what it points to.
+
+      </div>
+    </li>
+    <li>
+      <div id="p3">
+        This demo shows how to add live mini-previews to links on hover. Check out this link to
+        <a href="https://s3-ap-southeast-2.amazonaws.com/gnss-analysis/status/net/reg13/yearly_APSL_neh.png" target="_blank">MOBS
+          COR monitoring</a>. Hover over it to see a small preview of what it points to.
+
+      </div>
+    </li>
+  </ul>
+
+
+</body>
+
+</html>

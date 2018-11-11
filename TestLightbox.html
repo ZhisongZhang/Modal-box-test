@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./JavaScript/magnific-popup.css">
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="./JavaScript/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="./JavaScript/Mag_Popup.js"></script>
+
+</head>
+
+<body>
+    <a class="ajaxPop" href="https://s3-ap-southeast-2.amazonaws.com/gnss-analysis/status/net/reg13/yearly_ALBU_neh.png">albu</a><br>
+    
+
+</body>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.ajaxPop').magnificPopup({
+            type: 'image',
+            alignTop: true,
+            overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        });
+    });
+</script>
+
+</html>
